@@ -128,7 +128,7 @@ openbaton-cli == 6.0.0
 
 # C:\Users\vrlgo\Desktop\Steering Wheel web- Heroku Deployment\venv\steering.py: 3
 # C:\Users\vrlgo\Desktop\Steering Wheel web- Heroku Deployment\venv\steeringwheel.py: 2
-opencv_python == 4.4.0.42
+opencv-python == 4.4.0.42
 
 # C:\Users\vrlgo\Desktop\Steering Wheel web- Heroku Deployment\venv\Lib\site-packages\setuptools\sandbox.py: 20
 org-geppetto-recording == 0.1.0
