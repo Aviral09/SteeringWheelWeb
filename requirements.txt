@@ -10,7 +10,7 @@ opencv_python==4.4.0.42
 blinker==1.4
 brotli==1.0.9
 cryptography==3.2.1
-dataclasses==0.8
+#dataclasses==0.8
 eventlet==0.29.1
 gevent==20.9.0
 greenlet==0.4.17
