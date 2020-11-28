@@ -10,7 +10,7 @@ app = Flask(__name__)
 app.config["DEBUG"] = True
 
 
-camera = cv2.Videocapture(0)
+camera = cv2.VideoCapture(0)
 currentKey = list()
 
 def gen_frames():  # generate frame by frame from camera
