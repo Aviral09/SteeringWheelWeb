@@ -313,7 +313,7 @@ python-plugin-sdk == 6.0.1
 
 # C:\Users\vrlgo\Desktop\Steering Wheel web- Heroku Deployment\venv\Lib\site-packages\pip\_vendor\appdirs.py: 508
 # C:\Users\vrlgo\Desktop\Steering Wheel web- Heroku Deployment\venv\Lib\site-packages\pkg_resources\_vendor\appdirs.py: 497
-pywin32 == 228
+#pywin32 == 228
 
 # C:\Users\vrlgo\Desktop\Steering Wheel web- Heroku Deployment\venv\Lib\site-packages\pip\_vendor\requests\adapters.py: 86
 # C:\Users\vrlgo\Desktop\Steering Wheel web- Heroku Deployment\venv\Lib\site-packages\pip\_vendor\requests\api.py: 18
