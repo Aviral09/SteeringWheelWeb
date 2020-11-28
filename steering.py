@@ -4,14 +4,13 @@ import cv2
 import numpy as np
 import imutils
 from imutils.video import VideoStream
-from directkeys import PressKey, A, D, Space, ReleaseKey
+import keyboard
 
 app = Flask(__name__)
 app.config["DEBUG"] = True
 
 
-camera = cv2.VideoCapture(0)
-# camera = VideoStream(src=0).start()
+camera = VideoStream(src=0)
 currentKey = list()
 
 def gen_frames():  # generate frame by frame from camera
@@ -58,19 +57,19 @@ def gen_frames():  # generate frame by frame from camera
                 cX = int(M["m10"]/(M["m00"]+0.000001))
 
                 if cX < (width//2 - 35):
-                    PressKey(A)
+                    keyboard.press('a')
                     key = True
-                    currentKey.append(A)
+                    currentKey.append('a')
                 elif cX > (width//2 + 35):
-                    PressKey(D)
+                    keyboard.press('d')
                     key = True
-                    currentKey.append(D)
+                    currentKey.append('d')
                     
             
             if len(cnts_down) > 0:
-                PressKey(Space)
+                keyboard.press('Space')
                 key = True
-                currentKey.append(Space)
+                currentKey.append('Space')
             
             img = cv2.rectangle(img,(0,0),(width//2- 35,height//2 ),(0,255,0),1)
             cv2.putText(img,'LEFT',(110,30),cv2.FONT_HERSHEY_DUPLEX,1,(139,0,0))
